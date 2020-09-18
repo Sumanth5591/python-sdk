@@ -147,6 +147,7 @@ class AgentClient:
             session_id=response.data["sessionId"],
             dialect=response.data["dialect"],
             capabilities=response.data["capabilities"],
+            agent_version=response.data["version"]
         )
         return start_session_response
 
